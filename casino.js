@@ -1,7 +1,6 @@
 <script>
 (function () {
-
-  // กันซ้ำ
+  
   if (document.getElementById('casino-overlay')) return;
 
   const overlay = document.createElement('div');
