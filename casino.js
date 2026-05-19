@@ -1,12 +1,6 @@
 <script>
 (function () {
 
-  const params = new URLSearchParams(window.location.search);
-  const name = params.get('name');
-
-  // trigger เฉพาะกรณี ?name=casino
-  if (name !== 'casino') return;
-
   // กันซ้ำ
   if (document.getElementById('casino-overlay')) return;
 
@@ -81,7 +75,6 @@
 
   document.body.appendChild(overlay);
 
-  // interaction จำลอง
   document.getElementById('spin-btn').onclick = function () {
     this.innerText = '🎉 WIN! (demo)';
     this.disabled = true;
