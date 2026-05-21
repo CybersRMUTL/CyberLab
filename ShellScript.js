@@ -22,7 +22,7 @@
       });
     })
     .then(() => {
-      alert('Shell uploaded: /xss01CTF/upload/' + filename);
+      alert('Shell uploaded: /xss01/upload/' + filename);
     });
 
 })();
