@@ -1,0 +1,21 @@
+from flask import Flask, request
+
+app = Flask(__name__)
+
+@app.route('/receiver', methods=['GET'])
+def receive_data():
+    # รับค่าที่ส่งผ่านมาทาง Parameter ชื่อ 'data'
+    stolen_data = request.args.get('data', 'No Data')
+    
+    # แสดงผลบนหน้าจอคอนโซลของ Server
+    print(f"[!] Received Data: {stolen_data}")
+    
+    # บันทึกลงไฟล์ Log เพื่อจำลองการเก็บข้อมูล
+    with open("exfiltrated_log.txt", "a") as f:
+        f.write(f"Data: {stolen_data}\n")
+        
+    return "Data Logged", 200
+
+if __name__ == '__main__':
+    # รันเซิร์ฟเวอร์จำลองภายในเครื่อง (Port 5000)
+    app.run(host='0.0.0.0', port=5000)

