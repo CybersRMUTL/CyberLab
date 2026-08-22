@@ -8,3 +8,5 @@ michael
 daniel
 john
 ashley
+juiceshop
+promox
